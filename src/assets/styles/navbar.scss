@@ -1,0 +1,62 @@
+.navbar {
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  & .logoImg {
+    height: 60px;
+    width: auto;
+  }
+
+  & span{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+}
+
+.links{
+  padding: .5rem;
+    & ul{
+        list-style: none;
+        display: flex;
+        gap: 3rem;
+
+        & li{
+
+            & a{
+              color: #fff;
+              text-decoration: none;
+              font-family: "Roboto", sans-serif;
+            }
+        }
+    }
+}
+
+.loginButton{
+  padding: 1rem;
+}
+
+.lendingImg{
+  height: 500px;
+  width: auto;
+}
+
+.content{
+  display: flex;
+  
+}

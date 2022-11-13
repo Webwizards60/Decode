@@ -1,0 +1,79 @@
+
+.page {
+  position: fixed;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.LendingPage{
+  padding: 1.5rem;
+}
+
+.blob1 {
+  top: -1.5rem;
+  left: -2.5rem;
+  position: fixed;
+  opacity: 0.8;
+  filter: blur(50px);
+}
+
+.blob2 {
+  top: 2rem;
+  left: 55rem;
+  position: fixed;
+  opacity: 0.5;
+  filter: blur(80px);
+}
+
+.title {
+  font-size: 25px;
+  width: 50vw;
+  z-index: 1;
+  align-items: center;
+  & h1 {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 4px;
+  }
+}
+
+.backText {
+  z-index: -1;
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  & h1 {
+    color: rgba(255, 255, 255, 0.301);
+    font-weight: 100;
+  }
+}
+
+.subTitle{
+  font-size: 25px;
+  font-weight: 400;
+  color: rgb(182, 182, 182);
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 4rem;
+  margin-top: .25rem;
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  & .content{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.lendingImg{
+  height: 500px;
+  width: auto;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
