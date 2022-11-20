@@ -1,0 +1,44 @@
+.SubMenu{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12.5px);
+    align-items: center;
+    justify-content: left;
+    width: 12%;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+    padding: .5rem;
+    top: 60px;
+    transition: .4s ease all;
+    left: 55%;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+
+    & li{
+        border-radius: 7.5px;
+        padding: .5rem;
+        list-style: none;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        & a{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            text-decoration: none;
+            gap: .5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+
+            & img{
+                height: 30px;
+                width: auto;
+            }
+
+            & span{
+                color: #fff;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+    }
+}

@@ -55,9 +55,22 @@
 .logoln {
   z-index: 1;
   margin-bottom: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
   & .loginLogo {
     height: 50px;
     width: auto;
+  }
+
+  & span {
+    color: #fff;
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
 }
 
@@ -110,6 +123,10 @@
       &:focus{
         outline: none;
         border: 2px solid #cc5ebc;
+      }
+
+      &::placeholder{
+        color: rgb(163, 163, 163);
       }
     }
   }

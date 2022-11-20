@@ -48,13 +48,14 @@ export class Login extends React.Component {
                 delay: 0.7,
               }}
             />
+            <span>Decode</span>
           </div>
           <motion.div
             className="loginContainer"
             initial={{ y: "-10vh", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
-              duration: 0.5,
+              duration: 0.1,
               type: "spring",
               stiffness: 100,
               bounce: 5,

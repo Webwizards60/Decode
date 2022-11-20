@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonPrimary, SecondaryButton, Blob } from "../reuseAble";
 import "../styles/Lending.scss";
-import code from "../../img/imgss.png";
+import { MobAnimation } from "./progressBar";
 import { Navbar } from "./navbar";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -14,7 +14,7 @@ class LendingPage extends React.Component {
         animate={{ width: "100%", opacity: 1 }}
         exit={{ x: window.innerWidth, opacity: 0 }}
         transition={{
-          duration: 1,
+          duration: 0.1,
           type: "spring",
           stiffness: 100,
         }}
@@ -67,19 +67,9 @@ class LendingPage extends React.Component {
                   </motion.div>
                 </Link>
               </div>
-              <motion.div
-                className="images"
-                initial={{ y: -50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 100,
-                  duration: 0.5,
-                  delay: 1,
-                }}
-              >
-                <img src={code} className="lendingImg" />
-              </motion.div>
+              <div className="images">
+                <MobAnimation />
+              </div>
             </div>
             <motion.div
               className="blob blob1"

@@ -7,7 +7,7 @@
   z-index: 1;
   align-items: center;
   justify-content: space-between;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .logo {
@@ -19,7 +19,7 @@
     width: auto;
   }
 
-  & span{
+  & span {
     font-size: 30px;
     color: #fff;
     text-transform: uppercase;
@@ -29,34 +29,46 @@
   }
 }
 
-.links{
-  padding: .5rem;
-    & ul{
-        list-style: none;
-        display: flex;
-        gap: 3rem;
+.links {
+  padding: 0.5rem;
+  & ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
 
-        & li{
-
-            & a{
-              color: #fff;
-              text-decoration: none;
-              font-family: "Roboto", sans-serif;
-            }
-        }
+    & li {
+      & a {
+        color: #fff;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        cursor: pointer;
+      }
     }
+  }
 }
 
-.loginButton{
+.loginButton {
   padding: 1rem;
 }
 
-.lendingImg{
+.lendingImg {
   height: 500px;
   width: auto;
 }
 
-.content{
+.content {
   display: flex;
-  
+}
+
+.dropDown {
+  position: absolute;
+  top: 80px;
+}
+
+.social {
+  opacity: 1;
+}
+
+.nsocial {
+  opacity: 0;
 }
