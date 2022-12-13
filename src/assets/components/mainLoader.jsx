@@ -5,9 +5,15 @@ import { ProgressBar, ProgramAnimation } from "./progressBar";
 
 const MainLoader = () => {
   const text = [
-    "Initializing Pages",
-    "Fetching Resources",
-    "Getting Things Ready for you",
+    "<h1> Decode </h1>",
+    "print ('Decode')",
+    "cout<< 'Decode' ",
+    "printf('Decode')",
+    "System.out.println('Decode')",
+    "console.log('Decode')",
+    "fmt.println('Decode')",
+    "println!('Decode')",
+    "System.Console.WriteLine('Decode')",
   ];
 
   const [load, setLoad] = useState(text[0]);
@@ -15,12 +21,13 @@ const MainLoader = () => {
   let i = 0;
   useEffect(() => {
     const interval = setInterval(() => {
-      if (i < 2) {
+      if (i < 9) {
         i = i + 1;
       }
       setLoad(text[i]);
-    }, 3000);
+    }, 500);
     return () => clearInterval(interval);
+    console.log(i)
   }, []);
 
   return (
@@ -56,7 +63,10 @@ const MainLoader = () => {
           <ProgramAnimation />
         </div>
         <ProgressBar />
-        <span className="changingTxt">{load}</span>
+        <motion.span className="changingTxt" initial={{y: 10, opacity: 0}} animate={{y: 0, opacity: 1}} exit={{y: -10, opacity: 0}} transition={{
+          repeat: Infinity,
+          duration: 0.5
+        }}>{load}</motion.span>
       </div>
     </motion.div>
   );

@@ -1,0 +1,14 @@
+[
+  {
+    "text": "hello world",
+    "delay": 0.1
+  },
+  {
+    "text": "fuck this world",
+    "delay": 0.2
+  },
+  {
+    "text": "fuck you",
+    "delay": 0.3
+  }
+]
